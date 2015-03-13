@@ -3,7 +3,7 @@
 
     class WordCountTester extends PHPUnit_Framework_TestCase
     {
-        function test_makeWordCount_oneword()
+        function test_makeWordCount_oneletter()
         {
 
     //Arrange
@@ -18,6 +18,26 @@
     $this->assertEquals("1", $result);
 
         }
+
+        function test_makeWordCount_oneword()
+        {
+
+    //Arrange
+
+    $test_wordCounter = new WordCounter;
+    $input_word = "at";
+
+    //act
+    $result = $test_wordCounter->makeWordCount($input_word);
+
+    //assert
+    $this->assertEquals("1", $result);
+
+        }
+
+
+
+
 
     }
 
