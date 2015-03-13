@@ -12,7 +12,7 @@
     $input_word = "a";
 
     //act
-    $result = $test_repeatCounter->countRepeat($input_word);
+    $result = $test_repeatCounter->countRepeats($input_word);
 
     //assert
     $this->assertEquals("1", $result);
@@ -28,7 +28,7 @@
     $input_word = "at";
 
     //act
-    $result = $test_repeatCounter->countRepeat($input_word);
+    $result = $test_repeatCounter->countRepeats($input_word);
 
     //assert
     $this->assertEquals("1", $result);
@@ -41,14 +41,14 @@
     //Arrange
 
     $test_repeatCounter = new RepeatCounter;
-    $input_word = "at the";
-    $input_string = "at the";
+    $input_word = "at";
+    $input_string = "at the at";
 
     //act
-    $result = $test_repeatCounter->countRepeat($input_word);
+    $result = $test_repeatCounter->countRepeats($input_word);
 
     //assert
-    $this->assertEquals("1", $result);
+    $this->assertEquals("2", $result);
 
         }
 
