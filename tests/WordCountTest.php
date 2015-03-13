@@ -35,7 +35,22 @@
 
         }
 
+        function test_makeWordCount_onestring()
+        {
 
+    //Arrange
+
+    $test_wordCounter = new WordCounter;
+    $input_word = "at the";
+    $input_string = "at the";
+
+    //act
+    $result = $test_wordCounter->makeWordCount($input_word);
+
+    //assert
+    $this->assertEquals("1", $result);
+
+        }
 
 
 
