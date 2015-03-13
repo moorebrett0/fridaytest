@@ -1,10 +1,11 @@
 <?php
 
 
-    class wordCounter
+    class RepeatCounter
     {
-        function makeWordCount($input_word)
+        function countRepeats($input_word)
         {
+            $input_string = "";
             return str_word_count($input_word);
         }
 

@@ -8,44 +8,44 @@
 
     //Arrange
 
-    $test_wordCounter = new WordCounter;
+    $test_repeatCounter = new RepeatCounter;
     $input_word = "a";
 
     //act
-    $result = $test_wordCounter->makeWordCount($input_word);
+    $result = $test_repeatCounter->countRepeat($input_word);
 
     //assert
     $this->assertEquals("1", $result);
 
         }
 
-        function test_makeWordCount_oneword()
+        function test_countRepeat_oneword()
         {
 
     //Arrange
 
-    $test_wordCounter = new WordCounter;
+    $test_repeatCounter = new RepeatCounter;
     $input_word = "at";
 
     //act
-    $result = $test_wordCounter->makeWordCount($input_word);
+    $result = $test_repeatCounter->countRepeat($input_word);
 
     //assert
     $this->assertEquals("1", $result);
 
         }
 
-        function test_makeWordCount_onestring()
+        function test_countRepeat_onestring()
         {
 
     //Arrange
 
-    $test_wordCounter = new WordCounter;
+    $test_repeatCounter = new RepeatCounter;
     $input_word = "at the";
     $input_string = "at the";
 
     //act
-    $result = $test_wordCounter->makeWordCount($input_word);
+    $result = $test_repeatCounter->countRepeat($input_word);
 
     //assert
     $this->assertEquals("1", $result);
