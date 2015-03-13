@@ -14,8 +14,8 @@
 
     $app->get("/view_search", function() use($app) {
         $my_repeatCounter = new RepeatCounter;
-        $str_to_search = $my_repeatCounter->countRepeats($_GET['string']);
-        return $app['twig']->render('.twig', array('result' => $title_cased_phrase));
+        $word_count = $my_repeatCounter->countRepeats($_GET['string'], $_GET['word']);
+        return $app['twig']->render('.twig', array('result' => $word_count));
     });
 
     return $app;
