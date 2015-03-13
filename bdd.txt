@@ -1,0 +1,33 @@
+Overview
+
+I want to write a program to count how many times a specific word repeats within a given string.
+==============================================================================
+
+1. I would like "a" to be able to find itself.
+
+input: "a"
+output: "1"
+
+2. I would like "at" to be able to find itself and count 1.
+
+input: "at"
+output: "1"
+
+3. At this time I would like to input 2 words but only count 1 word.
+
+input: " at the"
+output: "1"
+
+4. The next step would be to input 2 of the same words and an additional word that it will not count
+
+input: "at the at"
+output: "2"
+
+5. I would then add an input of 2 identical words with a string of 2 different words but be able to count the 2 words i have specified.
+input: "at the fence at"
+output: "2"
+
+6. Lastly I want to be able to check how many times a word shows up in a string.
+input word to check : "at"
+input words to check with : "i was at a party and left at one o'clock"
+Output: "2"   
