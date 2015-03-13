@@ -12,10 +12,10 @@
         return $app['twig']->render('form.twig');
     });
 
-    $app->get("/view_search", function() use($app) {
+    $app->get("/view_results", function() use($app) {
         $my_repeatCounter = new RepeatCounter;
-        $word_count = $my_repeatCounter->countRepeats($_GET['string'], $_GET['word']);
-        return $app['twig']->render('.twig', array('result' => $word_count));
+        $word_count = $my_repeatCounter->countRepeats($_GET['word'], $_GET['string']);
+        return $app['twig']->render('count.twig', array('result' => $word_count));
     });
 
     return $app;
