@@ -3,10 +3,9 @@
 
     class RepeatCounter
     {
-        function countRepeats($input_word, $input_string)
+        function countRepeats($needle, $haystack)
         {
-            $haystack = "at";
-            $needle = "at";
+
             $input_word = strtolower($needle);
             $input_string = strtolower($haystack);
             $result = substr_count($input_string, $input_word);
