@@ -5,8 +5,10 @@
     {
         function countRepeats($input_word, $input_string)
         {
-            $input_word= strtolower("");
-            $input_string = strtolower("");
+            $haystack = "";
+            $needle = "";
+            $input_word= strtolower($needle);
+            $input_string = strtolower($haystack);
             $result = substr_count($input_string, $input_word);
             return $result;
         }
